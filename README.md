@@ -5,3 +5,5 @@ It's only added two more PHP packages:
 
 * php5-mcrypt
 * php5-intl
+
+Please, refer to original docker image to read full configurations.
