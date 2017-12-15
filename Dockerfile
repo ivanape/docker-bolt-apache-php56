@@ -23,7 +23,7 @@ COPY apache_default /etc/apache2/sites-available/000-default.conf
 COPY run.sh /usr/local/bin/run.sh
 RUN chmod +x /usr/local/bin/run.sh
 RUN a2enmod rewrite
-RUN chown www-data:www-data /var/www/
+RUN chown -R www-data:www-data /var/www/
 
 EXPOSE 80
 CMD ["/usr/local/bin/run.sh"]
